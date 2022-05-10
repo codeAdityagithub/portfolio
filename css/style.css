@@ -1,0 +1,345 @@
+:root{
+    --total:700px;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+
+#left{
+    background-color: #16123f;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+#right{
+    width: 80%;
+    height: 100%;
+    background-color:#c7ddcc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    position: absolute;
+    right: 0;
+}
+
+#intro{
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    flex-direction: column;
+    padding: 20px 0px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid grey;
+    color: white;
+    width: 100%;
+}
+
+#intro h3{
+    margin: 10px 0px;
+    font-size:1.5rem;
+}
+
+#profile{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    user-select: none;
+}
+
+#navbar{
+    width: 100%;
+}
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+    /* height: 300px; */
+}
+
+#navbar ul li{
+    padding: 5px;
+    margin: 5px 0px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    margin-left: 30px;
+}
+
+#navbar a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin: 10px 0px;
+    transition: 0.5s;
+}
+#navbar a:hover ion-icon{
+    font-size:2.2rem;
+}
+
+#navbar ion-icon{
+    font-size: 2rem;
+    transition: 0.3s;
+    margin-right: 10px;
+}
+#navbar a.active ion-icon{
+    color:var(--clr);
+    font-size:2.2rem;
+}
+
+
+#about{
+   background: linear-gradient(40deg, #abd699, #75c9b7);
+    width: 900px;
+    height: 560px;
+    transition: 0.5s;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+}
+#works{
+    background: linear-gradient(90deg, #abd699, #75c9b7);
+    width: 900px;
+    height: 560px;
+    transition: 0.5s;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+}
+#contact{
+    background: linear-gradient(135deg, #abd699, #75c9b7);
+    width: 900px;
+    height: 560px;
+    transition: 0.5s;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+}
+
+
+#right>div{
+    display: none;
+    
+}
+#right div.display{
+    display:flex;
+}
+
+.img{
+    height: 93%;
+    margin: 20px 8px 20px 20px;
+    width: 200px;
+}
+.img img{
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    user-select: none;
+   
+}
+
+#about>div{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.info{
+    /* background-color: rgb(163, 163, 163); */
+    color: black;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    flex-direction: column;
+    margin: 20px 20px 20px 8px;
+    border-radius: 10px;
+    height: 93%;
+}
+.info>p{
+    margin: 0px 10px 0px 30px;
+    
+}
+#name{
+    font-size: 1.6rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#desg{
+    border-bottom: 1px solid #ffe26a;
+    width: fit-content;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.skills{
+    margin: 20px 10px 0px 30px;
+}
+.skills>p{
+    width: 100%;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #ffe26a;
+    margin-bottom: 10px;
+}
+.skills>div{
+    margin: 10px 0px;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills>div span{
+    margin: 0px 5px;
+}
+
+.html{
+    display: block;
+    width: 500px;
+}
+.css{
+    display: block;
+    width: 500px;
+}
+.js{
+    display: block;
+    width: 500px;
+}
+.node{
+    display: block;
+    width: 500px;
+}
+.py{
+    display: block;
+    width: 500px;
+}
+.c{
+    display: block;
+    width: 500px;
+}
+
+.links{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.links a{
+    margin: 10px 0px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-decoration: none;
+}
+.links a ion-icon{
+    transition: 0.2s;
+    color: grey;
+    font-size: 1.4rem;
+    margin-right: 10px;
+}
+.links a span{
+    color: black;
+}
+.links a:nth-child(1):hover ion-icon{
+    color: rgb(208, 0, 0);
+}
+.links a:nth-child(2):hover ion-icon{
+    color: rgb(0, 49, 208);
+}
+.links a:nth-child(3):hover ion-icon{
+    color: rgb(208, 0, 0);
+}
+
+.links>span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px 10px 13px;
+}
+.links>span:hover ion-icon{
+    color: greenyellow;
+}
+
+.links>span ion-icon{
+    transition: 0.2s;
+    font-size: 1.4rem;
+    margin-right: 10px;
+    color: grey;
+}
+
+
+#works{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+}
+
+#works>div{
+    display: none;
+    width: 750px;
+    height: 500px;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+#works>span{
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+#works>span:active{
+    font-size: 3.7rem;
+}
+#works>span:nth-child(1){
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#works>span:nth-child(2){
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#works>div.show{
+    display: flex;
+}
+
+.killer{
+    background-color: red;
+}
+.netfix{
+    background-color: blue;
+}
+.livepeer{
+    background-color: green;
+}
