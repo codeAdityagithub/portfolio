@@ -15,6 +15,7 @@ body{
 }
 
 
+
 #left{
     background-color: #16123f;
     width: 20%;
@@ -373,6 +374,64 @@ body{
         justify-content: center;
         flex-direction: column;
 }
+
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact>form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.215);
+    flex-direction: column;
+    width: 500px;
+    height: 450px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+#contact>form input{
+    border-radius: 5px;
+    margin: 10px 0px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.315);
+    width: 350px;
+    border: 1px solid white;
+}
+#contact>form textarea{
+    resize: none;
+    border-radius: 5px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.315);
+    width: 350px;
+    height: 200px;
+    border: 1px solid white;
+}
+#contact>form p{
+    width: 350px;
+    text-align: left;
+    margin-top: 20px;
+    padding: 0;
+}
+#contact>form span{
+    font-size: 1.5rem;
+    margin: 20px 0px;
+}
+
+#contact>form .btn{
+    width: 140px;
+    height: 80px;
+    background-color: rgba(0, 89, 255, 0.253);
+    transition: 0.2s;
+}
+#contact>form .btn:hover{
+    background-color: #0092fa;
+}
+#contact>form .btn:active{
+    transform: scale(0.95);
+}
+
 
 /* .killer{
     background-color: red;
