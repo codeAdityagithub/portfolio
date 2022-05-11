@@ -48,8 +48,9 @@
                         
                         <div class="links">
                             <a href="https://www.youtube.com/channel/UCz2Cs3f8QhjsHKR7qXfBAYA/featured" target="_blank"><ion-icon name="logo-youtube"></ion-icon><span>Aditya 008</span></a>
-                            <a href="https://www.linkedin.com/in/code-with-aditya-082085228" target="_blank"><ion-icon name="logo-linkedin"></ion-icon><span>CodeWith Aditya</span></a>
+                            <a href="https://www.linkedin.com/in/codewith-aditya-082085228" target="_blank"><ion-icon name="logo-linkedin"></ion-icon><span>CodeWith Aditya</span></a>
                             <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><ion-icon name="mail"></ion-icon><span>adityathebest2019@gmail.com</span></a>
+                            <a href="https://github.com/codeAdityagithub" target="_blank"><ion-icon name="logo-github"></ion-icon><span>codeAdityagithub</span></a>
                             <span><ion-icon name="call" ></ion-icon><span>+91 12345-67890</span></span>
                         </div>
                     </div>
@@ -109,17 +110,22 @@
                 <span><ion-icon name="caret-back"></ion-icon></span>
                 <span><ion-icon name="caret-forward"></ion-icon></span>
                 <div class="killer show">
-
+                    <img src="./assets/killer.png" alt="">
+                    <p>Designed for my brothers youtube channel!</p>
+                    <a href="https://codeadityagithub.github.io/Killerbs/" target="_blank">Visit Now</a>
                 </div>
                 <div class="livepeer">
-
+                    <img src="./assets/D2-Stream.png" alt="">
+                    <p>Front-end and UI/UX was designed by me for a Hackathon I participated in!</p>
+                    <a href="https://livepeer.herokuapp.com/" target="_blank">Visit Now</a>
                 </div>
                 <div class="netfix">
-
+                    <img src="./assets/Netfix .png" alt="">
+                    <span style="font-size: 1.2rem;">check back soon!</span>
                 </div>
             </div>
             <div id="contact">
-
+                
             </div>
         </div>
 
@@ -159,7 +165,7 @@
         }
 
         function next(){
-            console.log("h")
+            // console.log("h")
             if (workdiv[0].classList.contains("show")) {
                 workdiv[1].classList.add("show");
                 workdiv[0].classList.remove("show");
@@ -174,14 +180,28 @@
               
             }
         }
+        function previous(){
+            if (workdiv[0].classList.contains("show")) {
+                workdiv[2].classList.add("show");
+                workdiv[0].classList.remove("show");
+            }
+            else if (workdiv[1].classList.contains("show")) {
+                workdiv[0].classList.add("show");
+                workdiv[1].classList.remove("show");
+            }
+            else if (workdiv[2].classList.contains("show")) {
+                workdiv[1].classList.add("show");
+                workdiv[2].classList.remove("show");
+              
+            }
+        }
 
 
         divs.forEach((item) => {
             item.addEventListener('click', active);
         })
-        workspan.forEach((item) => {
-            item.addEventListener('click', next);
-        })
+        workspan[0].addEventListener('click', previous);
+        workspan[1].addEventListener('click', next);
 
 
     </script>
